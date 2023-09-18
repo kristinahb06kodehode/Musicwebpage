@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media screen and (min-width: 250px) and (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+/* Tablet View */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+/* Desktop layout */
+
+body {
+  margin: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.gridify {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 100px 500px 200px 100px;
+  gap: 90px;
+}
+
+.logo {
+  background-color: #ddbffe;
+  padding-left: 30px;
+  font-size: 48px;
+  font-weight: bold;
+  color: whitesmoke;
+  border: 1px solid black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(83, 0, 128, 0.8), 0 0 20px rgba(112, 56, 202, 0.8);
+}
+
+.logo__image {
+  height: 60px;
+}
+.nav__bar {
+  background-color: #be98e7;
+  border: 1px solid black;
+}
+
+.nav__bar a {
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px #290a46;
+  text-decoration: none;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding: 5px;
+}
+.nav__bar a:hover {
+  color: #520c97;
+}
+
+.main__box {
+  background-color: #520c97;
+  background-image: url(./images/GlowingMan.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  font-size: 50px;
+  text-align: left;
+  padding: 50px;
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px #290a46;
+}
+
+button {
+  cursor: pointer;
+  border: 2px solid #290a46;
+  border-radius: 40px;
+  padding: 10px;
+  background-color: transparent;
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px #290a46;
+  font-size: 30px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+.aside__box {
+  background-color: #520c97;
+}
+
+.popular-playlists {
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px #290a46;
+  font-size: 40px;
+  text-align: center;
+}
+.playlist-images {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+section {
+  display: grid;
+  grid-column: 1 / span 2;
+  background-color: #be98e7;
+}
+.sponsor {
+  grid-gap: 1px;
+}
+
+.sponsor__images {
+  grid-row-start: 2;
+
+  justify-self: center;
+}
+
+.sponsor-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #520c97;
+  padding: 40px;
+}
