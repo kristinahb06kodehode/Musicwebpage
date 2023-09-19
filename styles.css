@@ -5,7 +5,7 @@
 }
 
 @media screen and (min-width: 250px) and (max-width: 480px) {
-  .container {
+  .gridify {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -13,7 +13,7 @@
 
 /* Tablet View */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .container {
+  .gridify {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -35,7 +35,6 @@ body {
 
 .logo {
   grid-column: span 1;
-
   background-color: #ddbffe;
   font-size: 48px;
   font-weight: bold;
